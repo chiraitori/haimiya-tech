@@ -1,0 +1,72 @@
+:root {
+  --sakura-mist: #fbf7f6;
+  --panel-surface: rgba(251, 247, 246, 0.84);
+  --panel-surface-strong: rgba(253, 250, 249, 0.92);
+  --charcoal-uniform: #232126;
+  --wolf-ash: #686673;
+  --wolf-ash-light: #93909e;
+  --blossom-blush: #e4b4be;
+  --blossom-soft: rgba(228, 180, 190, 0.28);
+  --iris-blue: #4f7ca6;
+  --iris-blue-soft: rgba(79, 124, 166, 0.12);
+  --hairline: rgba(35, 33, 38, 0.09);
+
+  --font-display: 'Shippori Mincho', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f5ecee;
+  color: var(--charcoal-uniform);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 900px) {
+  html,
+  body,
+  #app {
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+  }
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--iris-blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
